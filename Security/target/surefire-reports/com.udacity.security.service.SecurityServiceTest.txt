@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: com.udacity.security.service.SecurityServiceTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 0.385 s <<< FAILURE! - in com.udacity.security.service.SecurityServiceTest
+test10{ArmingStatus}[1]  Time elapsed: 0.318 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: Problems setting field securityRepository annotated with @org.mockito.Mock(name="", stubOnly=false, extraInterfaces={}, answer=RETURNS_DEFAULTS, serializable=false, lenient=false)
+Caused by: java.lang.IllegalAccessException: class org.mockito.internal.util.reflection.ReflectionMemberAccessor cannot access a member of class com.udacity.security.service.SecurityServiceTest (in module com.udacity.security) with modifiers "private"
+
+test10{ArmingStatus}[2]  Time elapsed: 0.001 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: Problems setting field securityRepository annotated with @org.mockito.Mock(name="", stubOnly=false, extraInterfaces={}, answer=RETURNS_DEFAULTS, serializable=false, lenient=false)
+Caused by: java.lang.IllegalAccessException: class org.mockito.internal.util.reflection.ReflectionMemberAccessor cannot access a member of class com.udacity.security.service.SecurityServiceTest (in module com.udacity.security) with modifiers "private"
+
+test1  Time elapsed: 0.001 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: Problems setting field securityRepository annotated with @org.mockito.Mock(name="", stubOnly=false, extraInterfaces={}, answer=RETURNS_DEFAULTS, serializable=false, lenient=false)
+Caused by: java.lang.IllegalAccessException: class org.mockito.internal.util.reflection.ReflectionMemberAccessor cannot access a member of class com.udacity.security.service.SecurityServiceTest (in module com.udacity.security) with modifiers "private"
+
+test2  Time elapsed: 0.001 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: Problems setting field securityRepository annotated with @org.mockito.Mock(name="", stubOnly=false, extraInterfaces={}, answer=RETURNS_DEFAULTS, serializable=false, lenient=false)
+Caused by: java.lang.IllegalAccessException: class org.mockito.internal.util.reflection.ReflectionMemberAccessor cannot access a member of class com.udacity.security.service.SecurityServiceTest (in module com.udacity.security) with modifiers "private"
+
+test4{RepetitionInfo}[1]  Time elapsed: 0.001 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: Problems setting field securityRepository annotated with @org.mockito.Mock(name="", stubOnly=false, extraInterfaces={}, answer=RETURNS_DEFAULTS, serializable=false, lenient=false)
+Caused by: java.lang.IllegalAccessException: class org.mockito.internal.util.reflection.ReflectionMemberAccessor cannot access a member of class com.udacity.security.service.SecurityServiceTest (in module com.udacity.security) with modifiers "private"
+
+test4{RepetitionInfo}[2]  Time elapsed: 0.002 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: Problems setting field securityRepository annotated with @org.mockito.Mock(name="", stubOnly=false, extraInterfaces={}, answer=RETURNS_DEFAULTS, serializable=false, lenient=false)
+Caused by: java.lang.IllegalAccessException: class org.mockito.internal.util.reflection.ReflectionMemberAccessor cannot access a member of class com.udacity.security.service.SecurityServiceTest (in module com.udacity.security) with modifiers "private"
+
+test7  Time elapsed: 0.001 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: Problems setting field securityRepository annotated with @org.mockito.Mock(name="", stubOnly=false, extraInterfaces={}, answer=RETURNS_DEFAULTS, serializable=false, lenient=false)
+Caused by: java.lang.IllegalAccessException: class org.mockito.internal.util.reflection.ReflectionMemberAccessor cannot access a member of class com.udacity.security.service.SecurityServiceTest (in module com.udacity.security) with modifiers "private"
+
+test8  Time elapsed: 0.001 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: Problems setting field securityRepository annotated with @org.mockito.Mock(name="", stubOnly=false, extraInterfaces={}, answer=RETURNS_DEFAULTS, serializable=false, lenient=false)
+Caused by: java.lang.IllegalAccessException: class org.mockito.internal.util.reflection.ReflectionMemberAccessor cannot access a member of class com.udacity.security.service.SecurityServiceTest (in module com.udacity.security) with modifiers "private"
+
+test9  Time elapsed: 0.001 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: Problems setting field securityRepository annotated with @org.mockito.Mock(name="", stubOnly=false, extraInterfaces={}, answer=RETURNS_DEFAULTS, serializable=false, lenient=false)
+Caused by: java.lang.IllegalAccessException: class org.mockito.internal.util.reflection.ReflectionMemberAccessor cannot access a member of class com.udacity.security.service.SecurityServiceTest (in module com.udacity.security) with modifiers "private"
+
