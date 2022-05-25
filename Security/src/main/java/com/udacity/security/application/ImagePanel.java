@@ -17,13 +17,12 @@ import java.io.IOException;
  */
 public class ImagePanel extends JPanel implements StatusListener {
     private SecurityService securityService;
-
     private JLabel cameraHeader;
     private JLabel cameraLabel;
     private BufferedImage currentCameraImage;
 
-    private int IMAGE_WIDTH = 300;
-    private int IMAGE_HEIGHT = 225;
+    private final int IMAGE_WIDTH = 300;
+    private final int IMAGE_HEIGHT = 225;
 
     public ImagePanel(SecurityService securityService) {
         super();

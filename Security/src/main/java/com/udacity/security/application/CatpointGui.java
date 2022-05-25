@@ -26,7 +26,7 @@ public class CatpointGui extends JFrame {
     public CatpointGui() {
         setLocation(100, 100);
         setSize(600, 850);
-        setTitle("Very Secure App");
+        setTitle("Cat Point App");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JPanel mainPanel = new JPanel();

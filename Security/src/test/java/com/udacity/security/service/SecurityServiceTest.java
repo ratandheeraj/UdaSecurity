@@ -3,7 +3,6 @@ package com.udacity.security.service;
 import com.udacity.image.service.ImageService;
 import com.udacity.security.application.StatusListener;
 import com.udacity.security.data.*;
-import com.udacity.security.service.SecurityService;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -46,7 +45,6 @@ public class SecurityServiceTest {
     @Test
     @DisplayName("1. If alarm is armed and a sensor becomes activated, put the system into pending alarm status.")
     void test1() {
-
         when(securityRepository.getAlarmStatus()).thenReturn(AlarmStatus.NO_ALARM);
         when(securityRepository.getArmingStatus()).thenReturn(ArmingStatus.ARMED_HOME);
         securityService.changeSensorActivationStatus(sensor, true);
@@ -57,7 +55,6 @@ public class SecurityServiceTest {
     @Test
     @DisplayName("2. If alarm is armed and a sensor becomes activated and the system is already pending alarm, set the alarm status to alarm.")
     void test2() {
-
         when(securityRepository.getAlarmStatus()).thenReturn(AlarmStatus.PENDING_ALARM);
         when(securityRepository.getArmingStatus()).thenReturn(ArmingStatus.ARMED_HOME);
         securityService.changeSensorActivationStatus(sensor, true);
@@ -69,7 +66,6 @@ public class SecurityServiceTest {
     void test3(){
         when(securityRepository.getArmingStatus()).thenReturn(ArmingStatus.ARMED_HOME);
         when(securityRepository.getAlarmStatus()).thenReturn(AlarmStatus.PENDING_ALARM);
-
         sensor.setActive(false);
         securityService.changeSensorActivationStatusWithSensor(sensor);
 
