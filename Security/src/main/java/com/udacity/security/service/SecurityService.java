@@ -6,7 +6,6 @@ import com.udacity.security.data.AlarmStatus;
 import com.udacity.security.data.ArmingStatus;
 import com.udacity.security.data.SecurityRepository;
 import com.udacity.security.data.Sensor;
-import com.udacity.image.service.FakeImageService;
 
 import java.awt.image.BufferedImage;
 import java.util.HashSet;
