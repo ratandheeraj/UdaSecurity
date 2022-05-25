@@ -6,13 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="UdaSecurity" />
+        <module name="Security" />
+        <module name="Image" />
         <module name="catpoint-parent" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Image" target="11" />
-      <module name="Security" target="11" />
-    </bytecodeTargetLevel>
   </component>
 </project>
