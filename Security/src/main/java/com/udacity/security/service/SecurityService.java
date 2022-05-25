@@ -20,10 +20,10 @@ import java.util.Set;
  * class you will be writing unit tests for.
  */
 public class SecurityService {
-
-    private ImageService imageService;
-    private SecurityRepository securityRepository;
-    private Set<StatusListener> statusListeners = new HashSet<>();
+    private Boolean isCatDetected = false;
+    private final ImageService imageService;
+    private final SecurityRepository securityRepository;
+    private final Set<StatusListener> statusListeners = new HashSet<>();
 
     public SecurityService(SecurityRepository securityRepository, ImageService imageService) {
         this.securityRepository = securityRepository;
@@ -36,10 +36,19 @@ public class SecurityService {
      * @param armingStatus
      */
     public void setArmingStatus(ArmingStatus armingStatus) {
+        if(armingStatus == ArmingStatus.ARMED_HOME && isCatDetected) {
+            setAlarmStatus(AlarmStatus.ALARM);
+        }
+
         if(armingStatus == ArmingStatus.DISARMED) {
             setAlarmStatus(AlarmStatus.NO_ALARM);
+        } else {
+            Set<Sensor> sensors = getSensors();
+            sensors.forEach(sensor -> changeSensorActivationStatus(sensor, false));
         }
         securityRepository.setArmingStatus(armingStatus);
+        statusListeners.forEach(StatusListener::sensorStatusChanged);
+
     }
 
     /**
@@ -48,14 +57,16 @@ public class SecurityService {
      * @param cat True if a cat is detected, otherwise false.
      */
     private void catDetected(Boolean cat) {
+        boolean getAllSensorsFromState = getSensors().stream().noneMatch(Sensor::getActive);
         if(cat && getArmingStatus() == ArmingStatus.ARMED_HOME) {
             setAlarmStatus(AlarmStatus.ALARM);
-        } else {
+        } else if(!cat && getAllSensorsFromState) {
             setAlarmStatus(AlarmStatus.NO_ALARM);
         }
-
+        isCatDetected = cat;
         statusListeners.forEach(sl -> sl.catDetected(cat));
     }
+
 
     /**
      * Register the StatusListener for alarm system updates from within the SecurityService.
@@ -107,12 +118,24 @@ public class SecurityService {
      * @param active
      */
     public void changeSensorActivationStatus(Sensor sensor, Boolean active) {
-        if(!sensor.getActive() && active) {
-            handleSensorActivated();
-        } else if (sensor.getActive() && !active) {
-            handleSensorDeactivated();
+        if(securityRepository.getAlarmStatus() != AlarmStatus.ALARM) {
+            if(active) {
+                handleSensorActivated();
+            } else if (sensor.getActive()) {
+                handleSensorDeactivated();
+            }
         }
         sensor.setActive(active);
+        securityRepository.updateSensor(sensor);
+    }
+
+    public void changeSensorActivationStatusWithSensor(Sensor sensor) {
+        AlarmStatus alarmStatus = this.getAlarmStatus();
+        ArmingStatus armingStatus = this.getArmingStatus();
+
+        if (( alarmStatus == AlarmStatus.PENDING_ALARM && !sensor.getActive() ) || ( alarmStatus == AlarmStatus.ALARM && armingStatus == ArmingStatus.DISARMED )) {
+            handleSensorDeactivated();
+        }
         securityRepository.updateSensor(sensor);
     }
 
