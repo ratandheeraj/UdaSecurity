@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.udacity.security.service.SecurityServiceTest" time="0.484" tests="22" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.udacity.security.service.SecurityServiceTest" time="0.478" tests="22" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="gnome"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter /home/ratankadirikota/code/UdaSecurity/Security/target/surefire 2022-05-26T03-06-38_497-jvmRun1 surefire10608972448431489710tmp surefire_18126441647299998201tmp"/>
+    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter /home/ratankadirikota/code/UdaSecurity/Security/target/surefire 2022-05-30T14-37-35_880-jvmRun1 surefire7180294434134407491tmp surefire_18459499333351432975tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/ratankadirikota/code/UdaSecurity/Security/target/test-classes:/home/ratankadirikota/.m2/repository/software/amazon/awssdk/annotations/2.15.0/annotations-2.15.0.jar:/home/ratankadirikota/.m2/repository/software/amazon/awssdk/utils/2.15.0/utils-2.15.0.jar:/home/ratankadirikota/.m2/repository/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar:/home/ratankadirikota/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.4/jackson-core-2.10.4.jar:/home/ratankadirikota/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.4/jackson-annotations-2.10.4.jar:/home/ratankadirikota/.m2/repository/software/amazon/awssdk/profiles/2.15.0/profiles-2.15.0.jar:/home/ratankadirikota/.m2/repository/software/amazon/awssdk/http-client-spi/2.15.0/http-client-spi-2.15.0.jar:/home/ratankadirikota/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.4/jackson-databind-2.10.4.jar:/home/ratankadirikota/.m2/repository/software/amazon/eventstream/eventstream/1.0.1/eventstream-1.0.1.jar:/home/ratankadirikota/.m2/repository/software/amazon/awssdk/aws-json-protocol/2.15.0/aws-json-protocol-2.15.0.jar:/home/ratankadirikota/.m2/repository/software/amazon/awssdk/protocol-core/2.15.0/protocol-core-2.15.0.jar:/home/ratankadirikota/.m2/repository/software/amazon/awssdk/aws-core/2.15.0/aws-core-2.15.0.jar:/home/ratankadirikota/.m2/repository/software/amazon/awssdk/metrics-spi/2.15.0/metrics-spi-2.15.0.jar:/home/ratankadirikota/.m2/repository/software/amazon/awssdk/apache-client/2.15.0/apache-client-2.15.0.jar:/home/ratankadirikota/.m2/repository/org/apache/httpcomponents/httpclient/4.5.9/httpclient-4.5.9.jar:/home/ratankadirikota/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/ratankadirikota/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/ratankadirikota/.m2/repository/org/apache/httpcomponents/httpcore/4.4.11/httpcore-4.4.11.jar:/home/ratankadirikota/.m2/repository/software/amazon/awssdk/netty-nio-client/2.15.0/netty-nio-client-2.15.0.jar:/home/ratankadirikota/.m2/repository/io/netty/netty-codec-http/4.1.46.Final/netty-codec-http-4.1.46.Final.jar:/home/ratankadirikota/.m2/repository/io/netty/netty-codec-http2/4.1.46.Final/netty-codec-http2-4.1.46.Final.jar:/home/ratankadirikota/.m2/repository/io/netty/netty-codec/4.1.46.Final/netty-codec-4.1.46.Final.jar:/home/ratankadirikota/.m2/repository/io/netty/netty-transport/4.1.46.Final/netty-transport-4.1.46.Final.jar:/home/ratankadirikota/.m2/repository/io/netty/netty-resolver/4.1.46.Final/netty-resolver-4.1.46.Final.jar:/home/ratankadirikota/.m2/repository/io/netty/netty-common/4.1.46.Final/netty-common-4.1.46.Final.jar:/home/ratankadirikota/.m2/repository/io/netty/netty-buffer/4.1.46.Final/netty-buffer-4.1.46.Final.jar:/home/ratankadirikota/.m2/repository/io/netty/netty-handler/4.1.46.Final/netty-handler-4.1.46.Final.jar:/home/ratankadirikota/.m2/repository/io/netty/netty-transport-native-epoll/4.1.46.Final/netty-transport-native-epoll-4.1.46.Final-linux-x86_64.jar:/home/ratankadirikota/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.46.Final/netty-transport-native-unix-common-4.1.46.Final.jar:/home/ratankadirikota/.m2/repository/com/typesafe/netty/netty-reactive-streams-http/2.0.4/netty-reactive-streams-http-2.0.4.jar:/home/ratankadirikota/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/home/ratankadirikota/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar:/home/ratankadirikota/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/ratankadirikota/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/ratankadirikota/.m2/repository/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar:/home/ratankadirikota/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.jar:/home/ratankadirikota/.m2/repository/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar:/home/ratankadirikota/.m2/repository/org/mockito/mockito-junit-jupiter/3.6.28/mockito-junit-jupiter-3.6.28.jar:/home/ratankadirikota/.m2/repository/org/mockito/mockito-core/3.6.28/mockito-core-3.6.28.jar:/home/ratankadirikota/.m2/repository/net/bytebuddy/byte-buddy/1.10.18/byte-buddy-1.10.18.jar:/home/ratankadirikota/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.18/byte-buddy-agent-1.10.18.jar:/home/ratankadirikota/.m2/repository/org/objenesis/objenesis/3.1/objenesis-3.1.jar:/home/ratankadirikota/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.0/junit-jupiter-params-5.7.0.jar:/home/ratankadirikota/.m2/repository/com/miglayout/miglayout-core/5.0/miglayout-core-5.0.jar:/home/ratankadirikota/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/ratankadirikota/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/ratankadirikota/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/ratankadirikota/.m2/repository/org/checkerframework/checker-qual/2.11.1/checker-qual-2.11.1.jar:/home/ratankadirikota/.m2/repository/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar:/home/ratankadirikota/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -39,7 +39,7 @@
     <property name="java.runtime.version" value="11.0.15+10-Ubuntu-0ubuntu0.20.04.1"/>
     <property name="user.name" value="ratankadirikota"/>
     <property name="path.separator" value=":"/>
-    <property name="os.version" value="5.14.0-1036-oem"/>
+    <property name="os.version" value="5.14.0-1038-oem"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
@@ -60,26 +60,26 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="test10(ArmingStatus)[1]" classname="com.udacity.security.service.SecurityServiceTest" time="0.269"/>
-  <testcase name="test10(ArmingStatus)[2]" classname="com.udacity.security.service.SecurityServiceTest" time="0.006"/>
-  <testcase name="test11" classname="com.udacity.security.service.SecurityServiceTest" time="0.013"/>
-  <testcase name="test12" classname="com.udacity.security.service.SecurityServiceTest" time="0.001"/>
-  <testcase name="test13" classname="com.udacity.security.service.SecurityServiceTest" time="0.001"/>
-  <testcase name="test14" classname="com.udacity.security.service.SecurityServiceTest" time="0.001"/>
-  <testcase name="test15" classname="com.udacity.security.service.SecurityServiceTest" time="0.001"/>
-  <testcase name="test16" classname="com.udacity.security.service.SecurityServiceTest" time="0.002"/>
-  <testcase name="test17(AlarmStatus)[1]" classname="com.udacity.security.service.SecurityServiceTest" time="0.003"/>
-  <testcase name="test17(AlarmStatus)[2]" classname="com.udacity.security.service.SecurityServiceTest" time="0.002"/>
-  <testcase name="test1" classname="com.udacity.security.service.SecurityServiceTest" time="0.002"/>
-  <testcase name="test2" classname="com.udacity.security.service.SecurityServiceTest" time="0.002"/>
-  <testcase name="test3" classname="com.udacity.security.service.SecurityServiceTest" time="0.002"/>
-  <testcase name="test4(RepetitionInfo)[1]" classname="com.udacity.security.service.SecurityServiceTest" time="0.002"/>
-  <testcase name="test4(RepetitionInfo)[2]" classname="com.udacity.security.service.SecurityServiceTest" time="0.002"/>
-  <testcase name="test5" classname="com.udacity.security.service.SecurityServiceTest" time="0.002"/>
-  <testcase name="test6(AlarmStatus)[1]" classname="com.udacity.security.service.SecurityServiceTest" time="0.003"/>
-  <testcase name="test6(AlarmStatus)[2]" classname="com.udacity.security.service.SecurityServiceTest" time="0.001"/>
-  <testcase name="test6(AlarmStatus)[3]" classname="com.udacity.security.service.SecurityServiceTest" time="0.002"/>
-  <testcase name="test7" classname="com.udacity.security.service.SecurityServiceTest" time="0.002"/>
-  <testcase name="test8" classname="com.udacity.security.service.SecurityServiceTest" time="0.096"/>
-  <testcase name="test9" classname="com.udacity.security.service.SecurityServiceTest" time="0.001"/>
+  <testcase name="ifTheImageServiceIdentifiesAnImageThatDoesNotContainACat_setTheStatusToNoAlarmAsLong_asLongAsTheSensorsAreNotActive" classname="com.udacity.security.service.SecurityServiceTest" time="0.357"/>
+  <testcase name="removeStatusListenersFromSystem" classname="com.udacity.security.service.SecurityServiceTest" time="0.001"/>
+  <testcase name="ifAlarmIsArmedAndSensorBecomesActivatedAndSystemInPendingAlarm_setsystemFromAlarmStatusToAlarm" classname="com.udacity.security.service.SecurityServiceTest" time="0.003"/>
+  <testcase name="ifASensorIsActivatedWhileAlreadyActiveAndTheSystemInPendingState_setToAlarmState" classname="com.udacity.security.service.SecurityServiceTest" time="0.003"/>
+  <testcase name="addSensorsToSystem" classname="com.udacity.security.service.SecurityServiceTest" time="0.002"/>
+  <testcase name="ifAlarmIsActive_ChangeInSensorStateShouldNotAffectTheAlarmState(RepetitionInfo)[1]" classname="com.udacity.security.service.SecurityServiceTest" time="0.004"/>
+  <testcase name="ifAlarmIsActive_ChangeInSensorStateShouldNotAffectTheAlarmState(RepetitionInfo)[2]" classname="com.udacity.security.service.SecurityServiceTest" time="0.002"/>
+  <testcase name="ifTheSystemIsArmedHomeWhileTheCameraShowsACat_setTheAlarmStatusToAlarm" classname="com.udacity.security.service.SecurityServiceTest" time="0.015"/>
+  <testcase name="ifAlarmStateAndSystemAreDisarmed_setStatusToPending" classname="com.udacity.security.service.SecurityServiceTest" time="0.002"/>
+  <testcase name="ifSystemIsDisarmed_setTheStatusToNoAlarm" classname="com.udacity.security.service.SecurityServiceTest" time="0.002"/>
+  <testcase name="ifAlarmIsArmedAndSensorBecomesActivated_setSystemIntoPendingState" classname="com.udacity.security.service.SecurityServiceTest" time="0.002"/>
+  <testcase name="addStatusListenersToSystem" classname="com.udacity.security.service.SecurityServiceTest" time="0.001"/>
+  <testcase name="ifImageServiceIdentifiesAnImageContainingCatWhileSystemIsArmedHome_setTheSystemIntoAlarmState" classname="com.udacity.security.service.SecurityServiceTest" time="0.002"/>
+  <testcase name="ifTheSystemIsArmed_resetAllSensorsToInactive(ArmingStatus)[1]" classname="com.udacity.security.service.SecurityServiceTest" time="0.023"/>
+  <testcase name="ifTheSystemIsArmed_resetAllSensorsToInactive(ArmingStatus)[2]" classname="com.udacity.security.service.SecurityServiceTest" time="0.005"/>
+  <testcase name="removeSensorsFromSystem" classname="com.udacity.security.service.SecurityServiceTest" time="0.002"/>
+  <testcase name="ifSystemDisarmedAndSensorIsActivated_noChangeToTheArmingState(AlarmStatus)[1]" classname="com.udacity.security.service.SecurityServiceTest" time="0.002"/>
+  <testcase name="ifSystemDisarmedAndSensorIsActivated_noChangeToTheArmingState(AlarmStatus)[2]" classname="com.udacity.security.service.SecurityServiceTest" time="0.001"/>
+  <testcase name="ifSensorIsDeactivatedWhileInactive_makeNoChangesToAlarm(AlarmStatus)[1]" classname="com.udacity.security.service.SecurityServiceTest" time="0.001"/>
+  <testcase name="ifSensorIsDeactivatedWhileInactive_makeNoChangesToAlarm(AlarmStatus)[2]" classname="com.udacity.security.service.SecurityServiceTest" time="0.001"/>
+  <testcase name="ifSensorIsDeactivatedWhileInactive_makeNoChangesToAlarm(AlarmStatus)[3]" classname="com.udacity.security.service.SecurityServiceTest" time="0.001"/>
+  <testcase name="ifPendingAlarmAndAllSensorsInactive_returnToNoAlarmState" classname="com.udacity.security.service.SecurityServiceTest" time="0.001"/>
 </testsuite>
